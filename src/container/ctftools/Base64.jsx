@@ -34,8 +34,6 @@ class Tools_Base64 extends Component {
         console.log(this.state.outputvalue)
     }
     exchange =()=>{
-        var tmpstr = "";
-        tmpstr = this.state.inputvalue
         this.setState({
             inputvalue : this.state.outputvalue,
             outputvalue : ''

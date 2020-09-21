@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 
-import { Input, Button } from 'antd';
-import { message, Space } from 'antd';
+import { Input, Button,message } from 'antd';
 
 const { TextArea } = Input;
 
 function stringToHex(str) {
   var val = "";
   for (var i = 0; i < str.length; i++) {
-
-    if (val == "")
+    if (val === "")
       val = str.charCodeAt(i).toString(16);
     else
       val += str.charCodeAt(i).toString(16);
@@ -60,8 +58,6 @@ class Tools_Hex extends Component {
     } catch (error) {
 
     }
-    var tmpstr = "";
-    tmpstr = this.state.inputvalue
     this.setState({
       inputvalue: this.state.outputvalue,
       outputvalue: ''

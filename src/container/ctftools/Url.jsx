@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 
 import { Input,Button } from 'antd';
-import Base64  from 'base-64';
 
 const { TextArea } = Input;
 
@@ -33,8 +32,6 @@ class Tools_Url extends Component {
         console.log(this.state.outputvalue)
     }
     exchange =()=>{
-        var tmpstr = "";
-        tmpstr = this.state.inputvalue
         this.setState({
             inputvalue : this.state.outputvalue,
             outputvalue : ''
